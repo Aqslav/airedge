@@ -1,0 +1,18 @@
+[project]
+name = "airedge"
+version = "1.0.0"
+description = "Edge-платформа моніторингу якості повітря (симульовані датчики)"
+requires-python = ">=3.10"
+dependencies = []  # лише стандартна бібліотека
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["airedge"]
+branch = true
+omit = ["airedge/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true

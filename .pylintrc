@@ -1,0 +1,11 @@
+[MASTER]
+init-hook='import sys; sys.path.insert(0, ".")'
+
+[FORMAT]
+max-line-length=110
+
+[DESIGN]
+min-public-methods=1
+
+[MESSAGES CONTROL]
+disable=missing-module-docstring
